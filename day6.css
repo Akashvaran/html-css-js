@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+    border: 3px solid red;
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px; */
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr); */
+
+    /* grid-template-columns: repeat(3,1fr) 2fr;
+    grid-template-rows: repeat(3,1fr) 2fr; */
+    
+    /* grid-template: repeat(3,1fr)/repeat(3,1fr); */
+
+    /* minmax */
+
+    /* grid-template: repeat(3,1fr)/repeat(3,minmax(200px,1fr)); */
+
+    /* grid-template: repeat(3,1fr)/repeat(3,1fr); */
+
+    /* column-gap: 30px;
+    row-gap: 50px; */
+
+    /* gap: 20px 50px; first one for row next for column */
+
+    /* gap: 50px; */
+
+    /* justify-items: center;
+    justify-items: end; */
+    /* justify-items: center; */
+
+    /* align-items: center; */
+    /* align-items: center;
+    align-items: end; */
+
+    /* place-items: start end;
+    place-items: center center; */
+
+    /* place-items: center;
+    place-items: end; */
+
+    
+    /* grid-template: repeat(3,200px)/repeat(3,200px); */
+    /* justify-content: center; start end center
+    align-content: center; start end center*/
+
+    /* place-content: start start;
+    "start center" "start end"
+    "center start" "center center" "center end"
+    "end start" "end center" "end end"
+    */
+    /* place-content: center; */
+
+    grid-template: repeat(3,200px)/repeat(3,300px);
+
+
+}
+
+.box{
+    /* height: 200px;
+    width: 300px; */
+    border: 2px solid red;
+}
+
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: orangered;
+}
+ 
